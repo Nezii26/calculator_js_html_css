@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="calculator">
+
+
+
+            <h2>Calculator</h2>
+
+            <div class="display" id="txtarea">
+
+
+
+                <input type="text" id="Calculation" placeholder="Calculation" size="25">
+                <br>
+                <input type="text" id="results" placeholder="answer" size="25">
+
+
+
+            </div>
+
+
+
+            <div class="buttons">
+
+                <input class="function" type="button" value="C" onclick="clikFunctions(this)">
+                <input class="function" type="button" value="←" onclick="clikFunctions()">
+                <input class="function" type="button" value="◴" onclick="clikFunctionshistory()">
+                <input class="operator" type="button" value="÷" onclick="clickOperators(this)">
+
+                <input class="number" type="button" value="7" onclick="clickNumbers(this)">
+                <input class="number" type="button" value="8" onclick="clickNumbers(this)">
+                <input class="number" type="button" value="9" onclick="clickNumbers(this)">
+                <input class="operator" type="button" value="×" onclick="clickOperators(this)">
+
+                <input class="number" type="button" value="4" onclick="clickNumbers(this)">
+                <input class="number" type="button" value="5" onclick="clickNumbers(this)">
+                <input class="number" type="button" value="6" onclick="clickNumbers(this)">
+                <input class="operator" type="button" value="−" onclick="clickOperators(this)">
+
+                <input class="number" type="button" value="1" onclick="clickNumbers(this)">
+                <input class="number" type="button" value="2" onclick="clickNumbers(this)">
+                <input class="number" type="button" value="3" onclick="clickNumbers(this)">
+                <input class="operator" type="button" value="+" onclick="clickOperators(this)">
+
+                <input class="number" type="button" value="0" onclick="clickNumbers(this)">
+                <input class="number" type="button" value="." onclick="clickNumbers(this)">
+                <input class="number" type="button" value="," onclick="clickNumbers(this)">
+                <input class="equal" type="button" value="=" onclick="clickCalculatorProcess()">
+
+            </div>
+
+        </div>
+
+        <div id="lbltext"></div>
+        <div id="calHistory"></div>
+
+    </div>
+    
+    <div class="container">
+        <div class="getcalHistory">
+
+            <h2>Cal History</h2>
+            <ul><textarea name="calHistry" id="calculatorHistory" cols="30" rows="18" readonly></textarea></ul>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
